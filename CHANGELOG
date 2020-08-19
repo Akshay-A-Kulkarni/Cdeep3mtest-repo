@@ -1,0 +1,90 @@
+# Changelog
+Tracking changes of CDeep3M Version 2.x.x
+
+## [Unreleased changes]
+
+## [2.1.5] - 2020-08-18
+### Fixed
+ - bug reading TIF multi-page stacks
+
+### Added
+ - handling file extension case-sensitivity
+ - enhancement support for TIF stacks
+
+## [2.1.4] - 2020-07-19
+### Fixed
+ - bugs reading CPU limits of EnsemblePredictions and Create_overlays
+ - bug reading CPU limits Colab
+
+## [2.1.3] - 2020-07-18
+### Added
+ - Can set CPU limitations in configs/cpu_resources.txt
+ - added reading CPU limits to enhance_stack, EnsemblePredictions and Create_overlays
+
+## [2.1.2] - 2020-04-18
+### Fixed
+- Binarization if labels above 1
+- Enhancements call for training data
+
+### Added
+- Logo
+- LICENSE
+- Same enhancements for validation dataset
+
+## [2.1.1] - 2020-03-22
+### Changed
+- Remove test for binary data in PreprocessPackage
+- Update sample data
+
+## [2.1.0] - 2020-03-04
+
+### Added
+- Echo CDeep3M Version from runtraining and runprediction
+- rundemo2.sh (runs very brief training and plots training graphs)
+
+### Changed
+- fixed fatal error in caffetrain.sh causing runtraining to run without generating trained data
+- fixed error in PreprocessTrainingData.py starting enhance_stack.py
+- fixed config file writing from PreprocessTraining
+
+## [2.0.3] - 2020-03-02
+
+### Changed
+Create_overlays.py: faster and reduce memory requirements
+
+## [2.0.2] - 2020-02-29
+
+### Added
+- Started CHANGELOG
+- PreprocessTraining writes file tracking configuration of augmentations for reproducibility
+### Fixed
+- Fixed bugs related to PreprocessTraining
+
+## [2.0.1] - 2020-02-20
+
+### Changed
+- Denoising algorithm, to improve hyperthreading and reduce memory footprint
+- Default configuration that enhancements are performed during training and segmentation
+- Default configuration that overlays are generated at the end of segmentation
+
+## [2.0.0] - 2020-02-10
+
+### Added
+- Image enhancemencements
+- Overlays of raw images with segmentation
+
+### Changed
+- Improved postprocessing speed
+- Changed padding to continuous instead of reflective
+
+### Fixed
+- A number of bugs fixed
+
+## [beta] - 2019-08-17
+### Added
+- Secondary (noise, contrast etc) and tertiary augmentations (size)
+- Use of multiple training datasets
+
+## [alpha] - 2019
+### Changed
+- Converted all octave scripts to python3
